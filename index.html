@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, maximum-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="theme-color" content="#0a1120" />
-  <title>Open Road Racer Pro</title>
-  <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
-  <div id="hud">
-    <div id="speed-panel">
-      <span id="speed">0</span>
-      <small>KM/H</small>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#0a1220" />
+    <title>Open Road Racer Pro</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <div id="speed-panel">
+        <span id="speed">0</span>
+        <small>KM/H</small>
+      </div>
+      <div id="gear-panel">D</div>
     </div>
-    <div id="gear-panel">D</div>
-  </div>
 
-  <div id="touch-controls">
-    <button id="left-btn" aria-label="Steer left">◀</button>
-    <button id="right-btn" aria-label="Steer right">▶</button>
-    <button id="brake-btn" class="brake" aria-label="Brake">BRAKE</button>
-    <button id="acc-btn" class="accel" aria-label="Accelerate">GAS</button>
-  </div>
-
-  <div id="start-screen" class="visible">
-    <div class="panel">
-      <h1>OPEN ROAD RACER</h1>
-      <p>Realistic browser driving experience</p>
-      <button id="start-btn">START</button>
+    <div id="touch-controls">
+      <button id="left-btn" aria-label="Steer left">◀</button>
+      <button id="right-btn" aria-label="Steer right">▶</button>
+      <button id="brake-btn" aria-label="Brake">BRAKE</button>
+      <button id="acc-btn" aria-label="Accelerate">GAS</button>
     </div>
-  </div>
 
-  <script type="module" src="./main.js"></script>
-</body>
+    <div id="start-screen">
+      <div class="panel">
+        <h1>OPEN ROAD RACER</h1>
+        <p>High-speed mobile driving prototype</p>
+        <button id="start-btn">START</button>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>

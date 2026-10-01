@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Open Road Racer">
+    <meta name="theme-color" content="#0d1117">
+    <title>Open Road Racer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="hud">
+        <div id="speed-panel">
+            <span id="speed">0</span>
+            <small>KM/H</small>
+        </div>
+        <div id="gear-panel">D</div>
+    </div>
+
+    <div id="touch-controls">
+        <button id="left-btn" class="control-btn">◀</button>
+        <button id="right-btn" class="control-btn">▶</button>
+        <button id="brake-btn" class="control-btn brake">BRAKE</button>
+        <button id="acc-btn" class="control-btn accel">GAS</button>
+    </div>
+
+    <div id="message-overlay">
+        <div class="overlay-content">
+            <h1>🏎️ OPEN ROAD RACER</h1>
+            <p>Use controls to steer and accelerate</p>
+            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Optimize for full screen on iOS</p>
+            <button id="start-btn">START ENGINE</button>
+        </div>
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@r160/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@r160/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
